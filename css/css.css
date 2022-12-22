@@ -3,16 +3,101 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: end;
+    margin: 2rem;
+    align-items: center;
+    height: 20rem;
+    background-image: url("/header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1ch;
+}
+header > h1 {
+    font-size: 6rem;
+    margin-right: 3rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Concert One', cursive;
+    font-style: italic;
+}
 body{
+    background-color: rgb(255, 255, 255);
+
+}
+#container{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 5rem;
 }
 #map1, #map2, #map3{
     height: 500px;
     width: 500px;
     border: 2px solid black;
-    box-shadow: 2px 2px 2px black;
-    margin-top: 2rem;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0);
+    margin-top: 4rem;
+    border-radius: 100%;
+}
+#map1:hover, #map2:hover, #map3:hover{
+    border: 2px solid darkorange;
+}
+img{
+    width: 200px;
+    height: 200px;
     border-radius: 1ch;
+}
+
+#bloc1 > p {
+    width: 40vw;
+    font-size: 2rem;
+}
+#bloc1, #bloc2, #bloc3{
+    display: flex;
+    width: 95vw;
+    height: 55rem;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 5rem;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.42);
+    border-radius: 20px;
+}
+#bloc2 > p {
+    width: 40vw;
+    font-size: 2rem;
+}
+
+#bloc3 > p{
+    width: 40vw;
+    font-size: 2rem;
+}
+
+footer{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4f4f4f;
+    border-top: 2px solid black;
+    color: white;
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Concert One', cursive;
+}
+
+.link{
+    font-weight: bold;
+    text-decoration: none;
+    color: darkorange;
+    font-style: italic;
 }

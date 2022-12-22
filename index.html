@@ -5,20 +5,101 @@
     <title>Carte interactive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-        crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-          integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-          crossorigin=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin=""></script>
 </head>
+
 <body>
-  <div id="map1"></div>
-  <div id="map2"></div>
-  <div id="map3"></div>
+<header>
+    <h1>Projet carte interactive</h1>
+</header>
 
+<div id="container">
+    <div id="bloc1">
+        <h2>La tour Salamandre:</h2>
+        <p>
+            La Tour Salamandre, située à <a class="link" href="https://fr.wikipedia.org/wiki/Beaumont_(Hainaut)"
+                                            target="_blank">Beaumont</a>
+            (Belgique), est un ancien donjon du XIe siècle. Développée et agrandie
+            en forteresse dominant la vallée de la Hantes, elle est à l’origine de la ville de Beaumont. Vestige le plus
+            important des anciennes murailles elle abrite aujourd’hui un musée retraçant l’histoire de la ville.
+            <br>
+            <br>
+            La Tour Salamandre abrite aujourd’hui un musée retraçant les origines et l’histoire de la ville de Beaumont
+            et l’histoire de ses fortifications. Des reproductions des très célèbres miniatures de Charles de Croÿ
+            relatives au comté de Beaumont sont exposées. Gravures et documents illustrent les rapports étroits entre
+            Charles Quint avec la famille de Croÿ. Aux étages se trouvent des descriptions généalogiques et des
+            souvenirs de la famille princière des Caraman.
 
+            On y rappelle également le passage de Napoléon à Beaumont : la nuit du 14 au 15 juin 1815 il logea, à
+            l’hôtel particulier de Maurice de Caraman, situé sur la grand place de la ville, abritant actuellement le
+            centre d'enseignement secondaire Paridaens. De la terrasse de la tour on peut découvrir le splendide
+            panorama de la vallée de la Hantes (au sud) et de la ville de Beaumont (au nord).
+        </p>
+        <div id="map1"></div>
+    </div>
 
+    <div id="bloc2">
+        <h2>Le fort de Douaumont:</h2>
+        <p>
+            Le fort de Douaumont, appelé brièvement fort Gérard, est un ouvrage fortifié situé dans la commune de <a
+                class="link"
+                href="https://fr.wikipedia.org/wiki/Douaumont-Vaux" target="_blank">Douaumont-Vaux</a>
+            (département de la Meuse), dans la commune déléguée de Douaumont. Il s'agit d'un des forts de
+            la place forte de Verdun, faisant partie du système Séré de Rivières.
+
+            Construit entre 1884 et 1886 et modernisé entre 1901 et 1913, le fort fut un des lieux emblématiques de la
+            bataille de Verdun en 1916 : pris par les troupes allemandes en février, il est repris par les Français en
+            octobre de la même année. Depuis la fin de la Première Guerre mondiale, ses ruines attirent les touristes ;
+            il est depuis 1970 classé monument historique.
+            <br>
+            <br>
+            Le fort est désormais une des principales attractions touristiques de l'ancien champ de bataille de Verdun,
+            complétant la visite de l'ossuaire et de la nécropole, qui sont à un kilomètre au sud-ouest, ainsi que du
+            Mémorial de Verdun à 2,4 km au sud. Le fort a attiré 94 225 visiteurs en 2012, 97 921 en 2013, 170 898 en
+            2014 (pic à l'occasion du centenaire du début du conflit)67 et 116 174 en 201768.
+
+        </p>
+        <div id="map2"></div>
+    </div>
+
+    <div id="bloc3">
+        <h2>Le Mont Blanc:</h2>
+        <p>
+            Le mont Blanc (en italien : Monte Bianco), dans le massif du Mont-Blanc, est le point culminant de la chaîne
+            des Alpes. Avec une altitude de 4 808 mètres, il est le plus haut sommet d'Europe occidentale et le sixième
+            sur le plan continental en prenant en compte les montagnes du Caucase, dont l'Elbrouz (5 642 mètres) est le
+            plus haut sommet. Il se situe sur la frontière franco-italienne, entre le département de la <a class="link"
+                                                                                                           href="https://fr.wikipedia.org/wiki/Haute-Savoie"
+                                                                                                           target="_blank">Haute
+            Savoie</a> (en
+            France) et la région autonome de la <a class="link"
+                                                   href="https://fr.wikipedia.org/wiki/Vall%C3%A9e_d%27Aoste"
+                                                   target="_blank">Vallée
+            d'Aoste</a> (en Italie) ; cette frontière est l'objet d'un litige
+            historique entre les deux pays.
+
+            Le sommet, objet de fascination dans de nombreuses œuvres culturelles, a depuis plusieurs siècles représenté
+            un objectif pour toutes sortes d'aventuriers, depuis sa première ascension en 1786. De nombreux itinéraires
+            fréquentés permettent désormais de le gravir avec une préparation sérieuse. Afin de déterminer son altitude
+            précise et quantifier l'évolution de celle-ci, des géomètres experts font l'ascension périodiquement. La
+            dernière mesure connue, en 2021, est de 4 807,8 mètres.
+        </p>
+        <div id="map3"></div>
+    </div>
+</div>
+
+<footer>
+    <p>Made with Love</p>
+</footer>
 
 <script src="JS/jquery-3.6.2.min.js"></script>
 <script src="JS/script.js"></script>
